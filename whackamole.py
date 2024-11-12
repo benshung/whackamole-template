@@ -35,7 +35,6 @@ def main():
                     running = False
                 if event.type == pygame.MOUSEBUTTONDOWN:
                     coords = event.pos
-                    print(getGrid((mole_x, mole_y)), (getGrid(coords)))
                     if getGrid((mole_x, mole_y)) == getGrid(coords):
                         mole_x = random.randrange(0, 19) * 32
                         mole_y = random.randrange(0,15) * 32
